@@ -1,0 +1,624 @@
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cel {
+    display: flex;
+    flex-direction: column;
+    height: 1116px;
+    width: 100%;
+}
+
+
+.header {
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    position: fixed;
+    z-index: 1;
+}
+
+.letters h1 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 44px;
+    color: #ffffff;
+}
+
+.letters h2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.platesection {
+    margin-top: 100px;
+    padding: 14px;
+}
+
+.title h1 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.rodizio {
+
+    height: 216px;
+    width: 100%;
+    margin-top: 17px;
+
+    display: flex;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.prato {
+    width: 142px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    margin-right: 16px;
+    padding: 14px 14px 0 14px;
+    position: relative;
+}
+
+.prato:hover {
+    background-color: #f1f1f1b4;
+    transform: scale(0.95);
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detalhes p {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.detalhes span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    margin-top: 14px;
+}
+
+.price {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price p {
+    font-weight: 400;
+}
+
+/*JS*/
+
+.price img {
+    display: none;
+}
+
+.cover {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    z-index: 0;
+    display: none;
+}
+
+
+/*Bebidas*/
+
+
+.beersection {
+    margin-top: 24px;
+    padding: 14px;
+}
+
+.sobresection {
+    margin-top: 27px;
+    padding: 14px;
+}
+
+
+/*Footer*/
+
+
+footer {
+    width: 100%;
+    height: 95px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    width: 364px;
+    height: 61px;
+    background-color: #cbcbcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.txt p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.button2 {
+    width: 364px;
+    height: 61px;
+    background-color: #32B72F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    display: none;
+}
+
+.button2:hover {
+    transform: scale(0.98);
+    background-color: #31b72fbe;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.txt2 p {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 19px;
+}
+
+/*tela final*/
+
+.telafinal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    position: fixed;
+    overflow-y: hidden;
+    display: none;
+}
+
+.tela {
+    position: absolute;
+    width: 359px;
+    height: 353px;
+    top: calc(50% - 353px/2 - 0.5px);
+
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 39%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.confirmar {
+    margin-top: 28px;
+    margin-left: 76px;
+}
+
+
+.confirmar p {
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.pedidos {
+    margin-top: 24px;
+    margin-left: 26px;
+    display: inline;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedidos p {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 22px;
+
+}
+
+.pedidos span {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.botao {
+    width: 310px;
+    height: 52px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 26px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao p {
+    font-weight: 700;
+    font-size: 22px;
+    color: #32B72F;
+}
+
+.botao:hover {
+    transform: scale(0.98);
+    background-color: #96e494be;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.botao p:hover {
+    color: #ffffff;
+}
+
+.cancelar {
+    width: 310px;
+    margin-top: 12px;
+    margin-left: 26px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelar p {
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.cancelar p:hover {
+    transform: scale(0.9);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+/*@media query*/
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #E5E5E5;
+        font-family: 'Roboto', sans-serif;
+        scroll-behavior: smooth;
+
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cel {
+        display: flex;
+        flex-direction: column;
+        height: 1116px;
+    }
+
+    .header {
+        width: 100%;
+        height: 92px;
+        background-color: #CF2B2B;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 14px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .letters h1 {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 44px;
+        color: #ffffff;
+    }
+
+    .letters h2 {
+        font-weight: 400;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .platesection {
+        margin-top: 100px;
+        padding: 14px;
+    }
+
+    .title h1 {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+    .rodizio {
+
+        height: 216px;
+        width: 100%;
+        margin-top: 17px;
+
+        display: flex;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .prato {
+        width: 172px;
+        height: auto;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 9px;
+        margin-right: 16px;
+        padding: 14px 14px 0 14px;
+        position: relative;
+    }
+
+
+    .detalhes {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .detalhes p {
+        font-weight: 700;
+        margin-top: 8px;
+    }
+
+    .detalhes span {
+        font-size: 15px;
+        font-weight: 300;
+        color: #A6A6A6;
+        margin-top: 14px;
+    }
+
+    .price {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .price p {
+        font-weight: 400;
+    }
+
+    /*JS*/
+
+    .price img {
+        display: none;
+    }
+
+    .cover {
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        z-index: 0;
+        display: none;
+    }
+
+
+    /*Bebidas*/
+
+
+    .beersection {
+        margin-top: 24px;
+        padding: 14px;
+    }
+
+    .sobresection {
+        margin-top: 27px;
+        padding: 14px;
+    }
+
+
+    /*Footer*/
+
+
+    footer {
+        width: 100%;
+        height: 95px;
+        background-color: #ffffff;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .button {
+        width: 364px;
+        height: 61px;
+        background-color: #cbcbcb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
+
+    .txt p {
+        font-weight: 400;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .button2 {
+        width: 364px;
+        height: 61px;
+        background-color: #32B72F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        display: none;
+    }
+
+    .button2:hover {
+        transform: scale(0.98);
+        background-color: #31b72fbe;
+        transition: 0.2s ease-out;
+    }
+
+    .txt2 p {
+        font-weight: 700;
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 19px;
+    }
+
+    /*tela final*/
+
+    .telafinal {
+        position: absolute;
+        width: 414px;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+        position: fixed;
+        overflow-y: hidden;
+        display: none;
+
+    }
+
+    .tela {
+        position: absolute;
+        width: 359px;
+        height: 353px;
+        top: calc(50% - 353px/2 - 0.5px);
+
+        background: #50D074;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .confirmar {
+        margin-top: 28px;
+        margin-left: 76px;
+    }
+
+    .confirmar p {
+        font-weight: 700;
+        font-size: 22px;
+        color: #ffffff;
+    }
+
+    .pedidos {
+        margin-top: 24px;
+        margin-left: 26px;
+        display: inline;
+        width: 310px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pedidos p {
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 22px;
+
+    }
+
+    .pedidos span {
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 22px;
+    }
+
+    .botao {
+        width: 310px;
+        height: 52px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-left: 26px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao p {
+        font-weight: 700;
+        font-size: 22px;
+        color: #32B72F;
+    }
+
+    .botao:hover {
+        transform: scale(0.98);
+        background-color: #96e494be;
+        transition: 0.2s ease-out;
+    }
+
+    .botao p:hover {
+        color: #ffffff;
+    }
+
+    .cancelar {
+        width: 310px;
+        margin-top: 12px;
+        margin-left: 26px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cancelar p {
+        font-weight: 700;
+        font-size: 22px;
+        color: #ffffff;
+    }
+
+    .cancelar p:hover {
+        transform: scale(0.9);
+        transition: 0.2s ease-out;
+    }
+}
