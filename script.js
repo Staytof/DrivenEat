@@ -493,3 +493,21 @@ sobreSection.addEventListener("click", function () {
     this.classList.toggle("selected");
     checkAllSectionsSelected();
 });
+
+function cancelar() {
+    const cancelar = document.getElementById("cancel");
+    const tela = document.getElementById("tela");
+
+    cancelar.addEventListener("click", function () {
+        tela.style.display = "none";
+    });
+}
+
+function telafinal() {
+    const button = document.getElementById("button2");
+    const tela = document.getElementById("tela");
+
+    button.addEventListener("click", function () {
+        tela.style.display = "block";
+    });
+}
