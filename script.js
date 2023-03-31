@@ -511,3 +511,16 @@ function telafinal() {
         tela.style.display = "block";
     });
 }
+
+function pedidofinal() {
+    cpedido = document.getElementById("cpedido");
+
+    let pedido =
+        "Olá, gostaria de fazer o pedido:\n" +
+        "- Prato: Frango Yin Yang:\n" +
+        "- Bebida: Coquinha Gelada:\n" +
+        "- Sobremesa: Pudim:\n" +
+        "Total: R$ 27,70"
+
+    window.open("http://wa.me/+5511930055859?text=" + encodeURIComponent(pedido));
+}
