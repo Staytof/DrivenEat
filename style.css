@@ -166,6 +166,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0 0 0;
 }
 
 .prato1:hover {
@@ -451,8 +452,6 @@ footer {
     cursor: pointer;
 }
 
-/*@media query*/
-
 @media screen and (max-width: 768px) {
     body {
         background-color: #E5E5E5;
@@ -468,7 +467,7 @@ footer {
     .cel {
         display: flex;
         flex-direction: column;
-        height: 1116px;
+        height: 1050px;
     }
 
     .header {
@@ -497,8 +496,8 @@ footer {
     }
 
     .platesection {
-        margin-top: 100px;
-        padding: 14px;
+        margin-top: 109px;
+        padding: 14px 0 0 0;
     }
 
     .title h1 {
@@ -531,11 +530,24 @@ footer {
         position: relative;
     }
 
+    .foto img {
+        width: 144px;
+        height: 87px;
+        margin-top: -3px;
+    }
+
+    .greens {
+        width: 18px;
+        height: 18px;
+        margin-right: -4px;
+        margin-top: 7px;
+    }
+
 
     .detalhes {
         display: flex;
         flex-direction: column;
-
+        margin-left: 0px;
     }
 
     .detalhes p {
@@ -551,7 +563,7 @@ footer {
     }
 
     .price {
-        margin-top: 16px;
+        margin-top: 5px;
         display: flex;
         justify-content: space-between;
 
@@ -565,6 +577,7 @@ footer {
 
     .price img {
         display: none;
+        z-index: 2;
     }
 
     .cover {
@@ -578,15 +591,129 @@ footer {
 
     /*Bebidas*/
 
+    .prato1 {
+        width: 172px;
+        height: 202px;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 11px;
+        margin-right: 16px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 14px 0 14px;
+    }
+
+    .prato1:hover {
+        background-color: #f1f1f1b4;
+        transform: scale(0.95);
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .prato1>.foto img {
+        width: 144px;
+        height: 87px;
+        margin-top: 1px;
+    }
+
+    .prato1>.cover img {
+        height: 217px;
+        width: 184px;
+    }
+
+    .prato1>.detalhes {
+        display: flex;
+        flex-direction: column;
+        margin-left: -23px;
+        margin-top: 3px;
+    }
+
+    .prato1>.detalhes span {
+
+        font-size: 15px;
+        font-weight: 300;
+        color: #A6A6A6;
+        margin-top: 12px;
+
+    }
+
+    .greens1 {
+        width: 18px;
+        height: 18px;
+        margin-right: -22px;
+        margin-top: 8px;
+    }
 
     .beersection {
-        margin-top: 24px;
-        padding: 14px;
+        margin-top: 16px;
+        padding: 14px 0 0 0;
+    }
+
+    /*sobremesa*/
+
+    .prato2 {
+        width: 172px;
+        height: 197px;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 11px;
+        margin-right: 16px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 14px 0 14px;
+    }
+
+    .prato2:hover {
+        background-color: #f1f1f1b4;
+        transform: scale(0.95);
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .prato2>.foto img {
+        width: 144px;
+        height: 87px;
+        margin-top: 1px;
+    }
+
+    .prato2>.cover img {
+        height: 210px;
+        width: 184px;
+    }
+
+    .prato2>.detalhes {
+        display: flex;
+        flex-direction: column;
+        margin-right: 47px;
+        margin-top: -1px;
+    }
+
+    .prato2>.detalhes span {
+
+        font-size: 15px;
+        font-weight: 300;
+        color: #A6A6A6;
+        margin-top: 12px;
+        
+    }
+
+    .greens2 {
+        width: 18px;
+        height: 18px;
+        margin-right: -47px;
+        margin-top: 8px;
+        z-index: 2;
     }
 
     .sobresection {
-        margin-top: 27px;
-        padding: 14px;
+        margin-top: 11px;
+        padding: 14px 0 0 0;
     }
 
 
